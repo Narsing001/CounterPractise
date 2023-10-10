@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+   </head>
+<body>
+<!-- navbar-start  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid ">
+
+ <button class="btn ml-lg-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars fa-2x"></i></button>
+
+      <a class="navbar-brand mx-lg-5" href="#">realfunnel</a>
+        <form class="d-flex me-auto">
+          <input class="form-control text-search  me-2" type="search" placeholder="Search" aria-label="Search">
+          
+        </form>
+      </div>
+      <div class="profile mx-4">
+            <ul class="outer_ul my-2 d-flex">
+                <li class="list-unstyled">
+                    <a href="#">
+                        <img src="./assets/img/ns.jpeg" style="border-radius:50%;" height=40 width=40 alt="">
+                    </a>
+                 <ul class="inner_ul list-unstyled">
+                     <li>
+                         <a href="">Profile</a>
+                     </li>
+                     <li>
+                        <a href="">Logout</a>
+                    </li>
+                 </ul>
+                </li>
+            </ul>    
+         </div>
+
+  </nav>
+<!-- navbar-end -->
+<!-- offcanvas-code-start -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul>
+      <li><i class="fa fa-home" aria-hidden="true"></i>
+        <a href="#">OVERVIEW</a></li>
+      <li> <i class="fa fa-filter" aria-hidden="true"></i>
+          <a href="#">FUNNELS</a></li>
+      <li>
+        <i class="fa fa-filter" aria-hidden="true"></i>
+         <a href="#">MERCHANTS</a> </li>
+      <li><a href="#">REPORTS</a></li>
+      <li><a href="#">CAMPAIGN</a></li>
+      <li><a href="#">CALCULATOR</a></li>
+    </ul>
+  </div>
+</div>
+<!-- offcanvas-code-end -->
+<!-- body part of task start -->
+<!-- dropdown-start -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-5 mx-auto text-center my-2">
+              <select name="" id="" style="width:80%; height:120%" placeholder="product">
+                  <option value="">pen</option>
+                  <option value="">book</option>
+              </select>
+        </div>
+        <div class="col-lg-5 text-center my-2">
+            <select name="" id="" style="width:80%; height:120%" placeholder="catagory">
+                <option value="">Study</option>
+                <option value="">Sports</option>
+            </select>
+      </div>
+      <div class="col-lg-2 text-center my-2">
+       <button>Submit</button>
+  </div>
+    </div>
+   
+</div>
+<!-- dropdown-end -->
+<!-- slide-counter-start -->
+<section class="fact-area">
+ <div class="container">
+  <div class="fact-box  py-4">
+    <div class="row">
+      <div class="col-lg col-6 single-fact text-center">
+         <span class="counter">
+          100</span>
+         <p>visiotor</p>
+      </div>
+      <div class="col-lg col-6 single-fact text-center">
+        <span class="counter">
+          100</span>
+        <p>Conversion</p>
+     </div>
+     <div class="col-lg col-6 single-fact text-center">
+      <span class="counter" ><i class="fa fa-usd" aria-hidden="true"></i>
+        100</span>
+      <p>Amount</p>
+     </div>
+    <div class="col-lg col-6 single-fact text-center">
+    <span class="counter"><i class="fa fa-usd" aria-hidden="true"></i>
+      100</span>
+    <p>Sale</p>
+ </div>
+    <div class="col-lg col-6 single-fact text-center">
+  <span class="counter">100</span>
+  <p>ADV</p>
+   </div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- slide-conter-end -->
+<!-- body part of task end -->
+ <!-- js code is here    -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+ <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="./assets/js/script.js"></script>
+</body>
+</html>
